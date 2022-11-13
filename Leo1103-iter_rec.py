@@ -15,6 +15,11 @@ print the result
 '''
 
 def iterativePower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+    returns: int or float, base^exp
+    '''
     if exp == 1:
         return base
     elif exp == 0:
@@ -42,6 +47,11 @@ print the result
 '''
 
 def recursivePower(base, exp):
+    '''
+    base: int or float.
+    exp: int >= 0
+    returns: int or float, base^exp
+    '''
     if exp == 1:
         return base
     elif exp == 0:
@@ -49,7 +59,4 @@ def recursivePower(base, exp):
     else:
         return base * (recursivePower(base, exp - 1))
 
-
-
 print(recursivePower(5,3))
-
