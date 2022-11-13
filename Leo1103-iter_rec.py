@@ -20,9 +20,7 @@ def iterativePower(base, exp):
     exp: int >= 0
     returns: int or float, base^exp
     '''
-    if exp == 1:
-        return base
-    elif exp == 0:
+    if exp == 0:
         return 1
     else:
         baseValue = base
@@ -30,7 +28,7 @@ def iterativePower(base, exp):
             base *= baseValue
         return base
 
-print(iterativePower(5,3))
+print(iterativePower(5,2))
 
 '''
 Recursive power:
